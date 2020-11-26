@@ -24,6 +24,12 @@ namespace LinqExercise
              */
 
             //Print the Sum and Average of numbers
+            int sum = numbers.Sum();
+            Console.WriteLine(sum);
+
+            double avg = numbers.Average();
+            Console.WriteLine(avg);
+
 
             //Order numbers in ascending order and decsending order. Print each to console.
 
