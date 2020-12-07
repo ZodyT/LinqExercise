@@ -33,11 +33,29 @@ namespace LinqExercise
 
             //Order numbers in ascending order and decsending order. Print each to console.
 
+            var asc = numbers.OrderBy(num => num);
+            Console.WriteLine("Ascending:");
+            foreach (var num in asc)
+            {
+                Console.WriteLine(num);
+            }
+
+            var desc = numbers.OrderByDescending(num => num);
+            Console.WriteLine("Decending:");
+            foreach (var num in desc)
+            {
+                Console.WriteLine(num);
+            }
+
+
+
             //Print to the console only the numbers greater than 6
+
 
             //Order numbers in any order (acsending or desc) but only print 4 of them **foreach loop only!**
 
             //Change the value at index 4 to your age, then print the numbers in decsending order
+            numbers[4] = 31;
 
             // List of employees ***Do not remove this***
             var employees = CreateEmployees();
